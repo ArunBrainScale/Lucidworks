@@ -11,8 +11,7 @@ sql-service:
       type: "ClusterIP"
 
 solr:
-  nodeSelector:
-    {}
+  nodeSelector: solrpool
   updateStrategy:
     type: "RollingUpdate"
   javaMem: "-Xmx2g -Dfusion_node_type=system"
